@@ -142,10 +142,3 @@ CSRF_TRUSTED_ORIGINS = ['https://*.render.com', 'https://*.onrender.com']
 # Для Render.com
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-from django.core.management import call_command
-
-# При запуске сервера принудительно применить миграции
-try:
-    call_command('migrate')
-except Exception as e:
-    print(f"Migration error: {e}")
