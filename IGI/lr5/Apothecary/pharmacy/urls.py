@@ -25,4 +25,5 @@ urlpatterns = [
     path('faq/', views.faq, name='faq'),
     path('checkout/', views.checkout, name='checkout'),
     path('sales-chart/', views.sales_chart, name='sales_chart'),
+    path('create-superuser/', views.create_superuser, name='create_superuser'),
 ]

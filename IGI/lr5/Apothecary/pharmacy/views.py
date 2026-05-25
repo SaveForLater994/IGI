@@ -409,3 +409,14 @@ def sales_chart(request):
         'suppliers': suppliers,
         'message': 'Нет данных о продажах' if not labels else None,
     })
+def create_superuser(request):
+    """Создать суперпользователя (только для первого запуска)"""
+    if not User.objects.filter(username='admin').exists():
+        User.objects.create_superuser(
+            username='admin',
+            email='admin@example.com',
+            password='admin123'
+        )
+        return JsonResponse({'status': 'superuser created'})
+    else:
+        return JsonResponse({'status': 'superuser already exists'})
