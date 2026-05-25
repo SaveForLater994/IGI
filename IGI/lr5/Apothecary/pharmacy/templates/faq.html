@@ -1,0 +1,70 @@
+{% extends 'base_generic.html' %}
+
+{% block title %}Словарь терминов и FAQ{% endblock %}
+
+{% block content %}
+<h2>Словарь терминов и часто задаваемые вопросы</h2>
+
+<!-- Поиск лекарства в OpenFDA -->
+<div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; background: #f9f9f9;">
+    <h3>Поиск информации о лекарстве</h3>
+    <form method="post">
+        {% csrf_token %}
+        <p>
+            <label for="drug_name">Введите название лекарства (на английском):</label><br>
+            <input type="text" name="drug_name" id="drug_name" value="{{ search_query|default:'' }}" placeholder="например: aspirin, ibuprofen" style="width: 300px;">
+            <button type="submit" name="search_drug">Найти</button>
+        </p>
+    </form>
+    
+    <!-- Результаты поиска -->
+    {% if drug_info %}
+        <div style="margin-top: 15px; padding: 15px; border: 1px solid #4CAF50; background: #e8f5e9;">
+            <h4>Результаты поиска: "{{ search_query }}"</h4>
+            
+            {% if drug_info.error %}
+                <p style="color: red;">{{ drug_info.error }}</p>
+            {% else %}
+                <p><strong>Торговое название:</strong> {{ drug_info.brand_name }}</p>
+                <p><strong>Действующее вещество:</strong> {{ drug_info.generic_name }}</p>
+                <p><strong>Производитель:</strong> {{ drug_info.manufacturer }}</p>
+                <p><strong>Описание:</strong> {{ drug_info.description }}</p>
+                <p><strong>Показания:</strong> {{ drug_info.indications_and_usage }}</p>
+                <p><strong>Предупреждения:</strong> {{ drug_info.warnings }}</p>
+                <p><strong>Дозировка:</strong> {{ drug_info.dosage_and_administration }}</p>
+                <p><strong>Побочные реакции:</strong> {{ drug_info.adverse_reactions }}</p>
+            {% endif %}
+        </div>
+    {% endif %}
+</div>
+
+<!-- Существующие записи FAQ -->
+{% if faq_list %}
+    <h3>Часто задаваемые вопросы</h3>
+    {% for item in faq_list %}
+        {% if item.entry_type == 'question' %}
+            <div>
+                <p><strong>Вопрос:</strong> {{ item.question }}</p>
+                <p><strong>Ответ:</strong> {{ item.answer }}</p>
+                <p><small>Добавлено: {{ item.created_at|date:"d.m.Y" }}</small></p>
+                <hr>
+            </div>
+        {% endif %}
+    {% endfor %}
+
+    <h3>Термины глоссария</h3>
+    {% for item in faq_list %}
+        {% if item.entry_type == 'term' %}
+            <div>
+                <p><strong>{{ item.question }}:</strong> {{ item.answer }}</p>
+                <p><small>Добавлено: {{ item.created_at|date:"d.m.Y" }}</small></p>
+                <hr>
+            </div>
+        {% endif %}
+    {% endfor %}
+{% else %}
+    <p>Записей пока нет.</p>
+{% endif %}
+
+<p><a href="{% url 'index' %}">← На главную</a></p>
+{% endblock %}

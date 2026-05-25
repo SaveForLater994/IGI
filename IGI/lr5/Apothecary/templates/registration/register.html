@@ -1,0 +1,62 @@
+{% extends 'base_generic.html' %}
+
+{% block title %}Регистрация{% endblock %}
+
+{% block content %}
+<h2>Регистрация</h2>
+
+<form method="post">
+    {% csrf_token %}
+    
+    {% if form.errors %}
+        <div style="color: red; border: 1px solid red; padding: 10px; margin-bottom: 20px;">
+            <strong>Ошибки:</strong>
+            {{ form.errors }}
+        </div>
+    {% endif %}
+    
+    <p>
+        <label for="id_username">Имя пользователя:</label><br>
+        {{ form.username }}
+        <small>{{ form.username.help_text }}</small>
+    </p>
+    
+    <p>
+        <label for="id_first_name">Имя:</label><br>
+        {{ form.first_name }}
+    </p>
+    
+    <p>
+        <label for="id_last_name">Фамилия:</label><br>
+        {{ form.last_name }}
+    </p>
+    
+    <p>
+        <label for="id_email">Email:</label><br>
+        {{ form.email }}
+    </p>
+    
+    <p>
+        <label for="id_birth_date">Дата рождения:</label><br>
+        {{ form.birth_date }}
+        <small>{{ form.birth_date.help_text }}</small>
+    </p>
+    
+    <p>
+        <label for="id_password1">Пароль:</label><br>
+        {{ form.password1 }}
+        <small>{{ form.password1.help_text }}</small>
+    </p>
+    
+    <p>
+        <label for="id_password2">Подтвердите пароль:</label><br>
+        {{ form.password2 }}
+        <small>{{ form.password2.help_text }}</small>
+    </p>
+    
+    <button type="submit">Зарегистрироваться</button>
+</form>
+
+<p><a href="{% url 'login' %}">Войти</a></p>
+<p><a href="{% url 'index' %}">← На главную</a></p>
+{% endblock %}

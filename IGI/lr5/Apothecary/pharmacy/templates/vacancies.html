@@ -1,0 +1,25 @@
+{% extends 'base_generic.html' %}
+
+{% block title %}Вакансии{% endblock %}
+
+{% block content %}
+<h2>Вакансии</h2>
+
+{% if vacancies %}
+    {% for vacancy in vacancies %}
+        <div>
+            <h3>{{ vacancy.title }}</h3>
+            <p><strong>Описание:</strong> {{ vacancy.description }}</p>
+            <p><strong>Требования:</strong> {{ vacancy.requirements }}</p>
+            <p><strong>Зарплата:</strong> {{ vacancy.get_formatted_salary }}</p>
+            <p><strong>Статус:</strong> {% if vacancy.is_active %}Активна{% else %}Закрыта{% endif %}</p>
+            <p><small>Размещено: {{ vacancy.created_at|date:"d.m.Y" }}</small></p>
+            <hr>
+        </div>
+    {% endfor %}
+{% else %}
+    <p>Вакансий пока нет.</p>
+{% endif %}
+
+<p><a href="{% url 'index' %}">← На главную</a></p>
+{% endblock %}

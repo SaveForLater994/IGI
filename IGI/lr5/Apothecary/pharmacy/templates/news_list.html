@@ -1,0 +1,26 @@
+{% extends 'base_generic.html' %}
+
+{% block title %}Новости{% endblock %}
+
+{% block content %}
+<h2>Новости аптеки</h2>
+
+{% if news_list %}
+    {% for news in news_list %}
+        <div>
+            <h3>{{ news.title }}</h3>
+            {% if news.image %}
+                <img src="{{ news.image.url }}" alt="{{ news.title }}" width="200">
+            {% endif %}
+            <p>{{ news.summary }}</p>
+            <p><a href="{% url 'news_detail' news.id %}">Читать далее →</a></p>
+            <p><small>Опубликовано: {{ news.publish_date|date:"d.m.Y H:i" }}</small></p>
+            <hr>
+        </div>
+    {% endfor %}
+{% else %}
+    <p>Новостей пока нет.</p>
+{% endif %}
+
+<p><a href="{% url 'index' %}">← На главную</a></p>
+{% endblock %}

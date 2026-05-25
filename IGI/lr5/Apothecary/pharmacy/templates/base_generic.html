@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% block title %}<title>SUPER COWBOY USA PHARMACY</title>{% endblock %}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <div>
+          {% block sidebar %}
+            <ul>
+              <li><a href="{% url 'index' %}">Home</a></li>
+              <li><a href="{% url 'about' %}">About</a></li>
+              <li><a href="{% url 'news_list' %}">News</a></li>
+              <li><a href="{% url 'faq' %}">FAQ</a></li>
+              <li><a href="{% url 'contacts' %}">Contacts</a></li>
+              <li><a href="{% url 'privacy' %}">Privacy policy</a></li>
+              <li><a href="{% url 'vacancies' %}">Vacancy</a></li>
+              <li><a href="{% url 'reviews' %}">Review</a></li>
+              <li><a href="{% url 'promocodes' %}">Promocodes</a></li>
+              <li><a href="{% url 'medication_list' %}">Medications</a></li>
+              {% if user.is_authenticated and user.groups.all.0.name == 'Employee' %}
+                <li><a href="{% url 'sales_chart' %}">График продаж и поставщики</a></li>
+              {% endif %}
+            </ul>
+
+            <ul class="sidebar-nav">
+              {% if user.is_authenticated %}
+                <li>User: {{ user.get_username }}</li>
+                <li>
+                  <form action="{% url 'logout' %}" method="post" style="display: inline;">
+                    {% csrf_token %}
+                    <button type="submit" style="background: none; border: none; color: blue; cursor: pointer; text-decoration: underline;">
+                      Logout
+                    </button>
+                  </form>
+                </li>
+              {% else %}
+                <li><a href="{% url 'login'%}?next={{request.path}}">Login</a></li>
+                <li><a href="{% url 'register'%}">Register</a></li>
+              {% endif %}
+            </ul>
+          {% endblock %}
+        </div>
+            
+        <div>{% block content %}{% endblock %}</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+{% extends 'base_generic.html' %}
+
+{% block title %}Оформление заказа{% endblock %}
+
+{% block content %}
+<h2>Оформление заказа</h2>
+
+<h3>Ваш заказ</h3>
+<table border="1" style="width: 100%;">
+    <thead>
+        <tr>
+            <th>Товар</th>
+            <th>Количество</th>
+            <th>Цена за шт.</th>
+            <th>Сумма</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in cart_items %}
+        <tr>
+            <td>
+                <strong>{{ item.medication.name }}</strong>
+                {% if item.medication.image %}
+                    <br><img src="{{ item.medication.image.url }}" width="50">
+                {% endif %}
+            </td>
+            <td>{{ item.quantity }}</td>
+            <td>{{ item.medication.price }} BYN</td>
+            <td>{{ item.total_price }} BYN</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<div style="margin-top: 20px; padding: 10px; border: 1px solid #ccc;">
+    <p><strong>Общая сумма:</strong> {{ total }} BYN</p>
+    {% if discount_amount > 0 %}
+        <p><strong>Скидка:</strong> -{{ discount_amount }} BYN</p>
+        <p><strong>Итоговая сумма:</strong> <span style="font-weight: bold; color: green;">{{ total }} BYN</span></p>
+    {% endif %}
+</div>
+
+<!-- Карта с точками самовывоза -->
+<div style="margin-bottom: 30px;">
+    <h3>Точки самовывоза</h3>
+    <div id="map" style="height: 400px; width: 100%; border: 1px solid #ccc;"></div>
+</div>
+
+<form method="post">
+    {% csrf_token %}
+    <h3>Данные для доставки</h3>
+    
+    <p>
+        <label for="pickup_point">Выберите точку самовывоза:</label><br>
+        <select name="pickup_point" id="pickup_point" required>
+            <option value="">-- Выберите --</option>
+            {% for point in pickup_points %}
+                <option value="{{ point.id }}">{{ point.name }} ({{ point.address }})</option>
+            {% endfor %}
+        </select>
+    </p>
+    
+    <p>
+        <label for="address">Адрес доставки (если не самовывоз):</label><br>
+        <input type="text" name="address" id="address" placeholder="Оставьте пустым, если выбрали самовывоз">
+    </p>
+    
+    <p>
+        <label for="phone">Телефон:</label><br>
+        <input type="text" name="phone" id="phone" required>
+    </p>
+    
+    <button type="submit">Подтвердить заказ</button>
+</form>
+
+<p><a href="{% url 'cart' %}">← Вернуться в корзину</a></p>
+
+<!-- Подключаем Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+    // Инициализация карты
+    var map = L.map('map').setView([53.9045, 27.5615], 13); // Минск
+    
+    // Добавляем слой карты (OpenStreetMap)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+    
+    // Точки самовывоза из базы данных (через JSON)
+    var pickupPoints = JSON.parse('{{ pickup_points_json|escapejs }}');
+    
+    // Добавляем маркеры на карту
+    pickupPoints.forEach(function(point) {
+        var marker = L.marker([point.latitude, point.longitude])
+            .addTo(map)
+            .bindPopup('<strong>' + point.address + '</strong>');
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends 'base_generic.html' %}
+
+{% block title %}Контакты{% endblock %}
+
+{% block content %}
+<h2>Наши сотрудники</h2>
+
+{% if employees %}
+    <table border="1" style="width: 100%; border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>Фото</th>  <!-- Добавлен столбец -->
+                <th>Имя</th>
+                <th>Фамилия</th>
+                <th>Должность</th>
+                <th>Отдел</th>
+                <th>Телефон</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for employee in employees %}
+            <tr>
+                <td>
+                    {% if employee.photo %}
+                        <img src="{{ employee.photo.url }}" alt="{{ employee.user.first_name }}" width="50" height="50" style="border-radius: 50%;">
+                    {% else %}
+                        <span>—</span>
+                    {% endif %}
+                </td>
+                <td>{{ employee.user.first_name }}</td>
+                <td>{{ employee.user.last_name }}</td>
+                <td>{{ employee.position }}</td>
+                <td>{{ employee.department.name|default:"Не указан" }}</td>
+                <td>{{ employee.phone }}</td>
+                <td>{{ employee.user.email }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>Сотрудники пока не добавлены.</p>
+{% endif %}
+
+<p><a href="{% url 'index' %}">← На главную</a></p>
+{% endblock %}

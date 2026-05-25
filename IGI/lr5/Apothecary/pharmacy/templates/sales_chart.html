@@ -1,0 +1,60 @@
+{% extends 'base_generic.html' %}
+
+{% block title %}Статистика продаж и поставщики{% endblock %}
+
+{% block content %}
+<h2>Статистика продаж и поставщики</h2>
+
+{% if message %}
+    <p>{{ message }}</p>
+{% endif %}
+
+{% if chart %}
+    <div style="text-align: center; margin-bottom: 40px;">
+        <h3>Круговая диаграмма продаж по лекарствам</h3>
+        <img src="data:image/png;base64,{{ chart }}" alt="Круговая диаграмма" style="max-width: 100%;">
+    </div>
+{% endif %}
+
+<h3>Поставщики</h3>
+{% if suppliers %}
+    <table border="1" style="width: 100%; border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Контактное лицо</th>
+                <th>Телефон</th>
+                <th>Email</th>
+                <th>ИНН</th>
+                <th>Поставляемые лекарства</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for supplier in suppliers %}
+            <tr>
+                <td><strong>{{ supplier.name }}</strong></td>
+                <td>{{ supplier.contact_person|default:"Не указано" }}</td>
+                <td>{{ supplier.phone }}</td>
+                <td>{{ supplier.email|default:"Не указан" }}</td>
+                <td>{{ supplier.inn|default:"Не указан" }}</td>
+                <td>
+                    {% if supplier.medications.all %}
+                        <ul>
+                            {% for medication in supplier.medications.all %}
+                                <li>{{ medication.name }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <span>Нет поставок</span>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>Поставщики пока не добавлены.</p>
+{% endif %}
+
+<p><a href="{% url 'index' %}">← На главную</a></p>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base_generic.html' %}
+
+{% block title %}О компании{% endblock %}
+
+{% block content %}
+<h2>О нашей аптеке</h2>
+
+{% if company_info %}
+    <h3>{{ company_info.title }}</h3>
+    <p>{{ company_info.content }}</p>
+    
+    <h4>История по годам</h4>
+    <p>{{ company_info.history }}</p>
+    
+    <h4>Реквизиты</h4>
+    <p>{{ company_info.requisites }}</p>
+    
+    <p><small>Обновлено: {{ company_info.updated_at|date:"d.m.Y H:i" }}</small></p>
+{% else %}
+    <p>Информация о компании еще не добавлена.</p>
+{% endif %}
+{% endblock %}

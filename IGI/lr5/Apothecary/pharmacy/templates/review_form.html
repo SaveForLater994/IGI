@@ -1,0 +1,28 @@
+{% extends 'base_generic.html' %}
+
+{% block title %}Добавить отзыв{% endblock %}
+
+{% block content %}
+<h2>Добавить отзыв</h2>
+
+<form action="{% url 'add_review' %}" method="post">
+    {% csrf_token %}
+    <p>
+        <label>Текст отзыва:</label><br>
+        <textarea name="text" rows="5" cols="50" required></textarea>
+    </p>
+    <p>
+        <label>Оценка:</label><br>
+        <select name="rating" required>
+            <option value="5">5 звёзд</option>
+            <option value="4">4 звезды</option>
+            <option value="3">3 звезды</option>
+            <option value="2">2 звезды</option>
+            <option value="1">1 звезда</option>
+        </select>
+    </p>
+    <p><button type="submit">Отправить</button></p>
+</form>
+
+<p><a href="{% url 'reviews' %}">← К списку отзывов</a></p>
+{% endblock %}

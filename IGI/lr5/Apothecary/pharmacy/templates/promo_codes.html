@@ -1,0 +1,49 @@
+{% extends 'base_generic.html' %}
+
+{% block title %}Промокоды{% endblock %}
+
+{% block content %}
+<h2>Промокоды и купоны</h2>
+
+<h3>Действующие промокоды</h3>
+{% if active_promocodes %}
+    <table border="1">
+        <tr>
+            <th>Промокод</th>
+            <th>Скидка</th>
+            <th>Действует до</th>
+        </tr>
+        {% for promo in active_promocodes %}
+            <tr>
+                <td>{{ promo.code }}</td>
+                <td>{{ promo.discount }}%</td>
+                <td>{{ promo.end_date|date:"d.m.Y" }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% else %}
+    <p>Действующих промокодов нет.</p>
+{% endif %}
+
+<h3>Архив промокодов</h3>
+{% if expired_promocodes %}
+    <table border="1">
+        <tr>
+            <th>Промокод</th>
+            <th>Скидка</th>
+            <th>Статус</th>
+        </tr>
+        {% for promo in expired_promocodes %}
+            <tr>
+                <td>{{ promo.code }}</td>
+                <td>{{ promo.discount }}%</td>
+                <td>{{ promo.status_display }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% else %}
+    <p>Промокодов в архиве нет.</p>
+{% endif %}
+
+<p><a href="{% url 'index' %}">← На главную</a></p>
+{% endblock %}

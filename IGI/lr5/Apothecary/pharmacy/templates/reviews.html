@@ -1,0 +1,53 @@
+{% extends 'base_generic.html' %}
+
+{% block title %}Отзывы{% endblock %}
+
+{% block content %}
+<h2>Отзывы</h2>
+
+<h3>Добавить отзыв</h3>
+{% if user.is_authenticated %}
+    <form action="{% url 'add_review' %}" method="post">
+        {% csrf_token %}
+        <p>
+            <label>Текст отзыва:</label><br>
+            <textarea name="text" rows="5" cols="50" required></textarea>
+        </p>
+        <p>
+            <label>Оценка:</label><br>
+            <select name="rating" required>
+                <option value="5">5 звёзд</option>
+                <option value="4">4 звезды</option>
+                <option value="3">3 звезды</option>
+                <option value="2">2 звезды</option>
+                <option value="1">1 звезда</option>
+            </select>
+        </p>
+        <p><button type="submit">Отправить</button></p>
+    </form>
+{% else %}
+    <p><a href="{% url 'login' %}">Войдите</a> или <a href="{% url 'register' %}">зарегистрируйтесь</a>, чтобы оставить отзыв.</p>
+{% endif %}
+
+<hr>
+
+<h3>Список отзывов</h3>
+
+{% if reviews %}
+    {% for review in reviews %}
+        <div>
+            <p><strong>{{ review.user.username }}</strong> ({{ review.created_at|date:"d.m.Y" }}) — 
+                {% for i in "12345" %}
+                    {% if i|add:"0" <= review.rating %}★{% else %}☆{% endif %}
+                {% endfor %}
+            </p>
+            <p>{{ review.text }}</p>
+            <hr>
+        </div>
+    {% endfor %}
+{% else %}
+    <p>Отзывов пока нет.</p>
+{% endif %}
+
+<p><a href="{% url 'index' %}">← На главную</a></p>
+{% endblock %}

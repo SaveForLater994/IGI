@@ -1,0 +1,47 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Pharmacy HOME</h1>
+
+  <p>Welcome to <em>Pharmacy</em>, a very basic Django website developed as a tutorial example on the Mozilla Developer Network.</p>
+
+  <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; max-width: 300px;">
+    <h3 style="text-align: center;">{{ current_month }} {{ current_year }}</h3>
+    <table border="1" style="width: 100%; border-collapse: collapse; text-align: center;">
+        <tr>
+            <th>Пн</th>
+            <th>Вт</th>
+            <th>Ср</th>
+            <th>Чт</th>
+            <th>Пт</th>
+            <th>Сб</th>
+            <th>Вс</th>
+        </tr>
+        {% for week in calendar_weeks %}
+            <tr>
+                {% for day in week %}
+                    {% if day == 0 %}
+                        <td></td>
+                    {% elif day == today_day %}
+                        <td style="font-weight: bold; background: #4CAF50; color: white;">{{ day }}</td>
+                    {% else %}
+                        <td>{{ day }}</td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+    <p style="text-align: center; margin-top: 10px;">Сегодня: {{ today|date:"d.m.Y" }}</p>
+</div>
+
+  <p>Latest news:</p>
+  <ul>
+    {% if u_image %}
+        <img src="{{ u_image.url }}" alt="{{ u_title }}" width="300">
+    {% endif %}
+    <li><strong>Title:</strong> {{ u_title }}</li>
+    <li><strong>Content:</strong> {{ u_content }}</li>
+    <li><strong>Date:</strong> {{ u_date }}</li>
+  </ul>
+
+{% endblock %}
