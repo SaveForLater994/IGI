@@ -33,7 +33,8 @@
     </table>
     <p style="text-align: center; margin-top: 10px;">Сегодня: {{ today|date:"d.m.Y" }}</p>
 </div>
-
+    
+    <p>Локальное время системы: {{ local_time|date:"H:i:s" }}</p>
   <p>Latest news:</p>
   <ul>
     {% if u_image %}

@@ -21,18 +21,21 @@ from django.core.serializers import serialize
 from django.http import JsonResponse
 import json
 import requests
+from tzlocal import get_localzone
 def index(request):
     latest_new = News.objects.first()
     today = datetime.now()
     current_year = today.year
     current_month = today.month
-    current_month_name = today.strftime('%B')  # Название месяца (Январь, Февраль...)
+    current_month_name = today.strftime('%B')
     today_day = today.day
+    local_tz = get_localzone()
+    local_time = datetime.now(local_tz)
     calendar_weeks = monthcalendar(current_year, current_month)
     return render(request, 'index.html', context={'u_title':latest_new.title, 'u_content':latest_new.full_text,'u_date':latest_new.publish_date,'u_image':latest_new.image, 'today':today, 'current_year': current_year,
         'current_month_name': current_month_name,
         'today_day': today_day,
-        'calendar_weeks': calendar_weeks,},)
+        'calendar_weeks': calendar_weeks,'local_time': local_time,},)
 
 def about(request):
     company_info = CompanyInfo.objects.first()
