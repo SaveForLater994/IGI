@@ -1,0 +1,1860 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-05-18T10:07:09.259Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "weed",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-05-18T10:07:52.201Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "Drugs",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-05-18T10:08:46.201Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "1",
+    "object_repr": "Drugs",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-05-18T10:08:54.414Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Weed",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-05-19T06:44:21.540Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "2",
+    "object_repr": "For all people",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-05-19T06:45:33.150Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "2",
+    "object_repr": "analgesic",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-05-19T06:46:15.200Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Paracetamol",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-05-19T06:48:18.782Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Acetaminophen",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-05-19T06:49:11.851Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Paracetamol",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0435\\u0439\\u0441\\u0442\\u0432\\u0443\\u044e\\u0449\\u0438\\u0435 \\u0432\\u0435\\u0449\\u0435\\u0441\\u0442\\u0432\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-05-20T15:12:02.259Z",
+    "user": 2,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "Test",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2026-05-20T18:10:37.442Z",
+    "user": 2,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "Test",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2026-05-20T18:17:59.055Z",
+    "user": 2,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "Test",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2026-05-20T18:36:56.034Z",
+    "user": 2,
+    "content_type": 14,
+    "object_id": "2",
+    "object_repr": "qqqq",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2026-05-22T08:05:33.766Z",
+    "user": 2,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "test (15%)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2026-05-24T12:10:46.978Z",
+    "user": 2,
+    "content_type": 4,
+    "object_id": "3",
+    "object_repr": "testuser",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2026-05-24T12:21:12.363Z",
+    "user": 2,
+    "content_type": 2,
+    "object_id": "1",
+    "object_repr": "Employee",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2026-05-24T12:39:36.777Z",
+    "user": 2,
+    "content_type": 2,
+    "object_id": "2",
+    "object_repr": "Customer",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2026-05-24T12:42:14.814Z",
+    "user": 2,
+    "content_type": 4,
+    "object_id": "3",
+    "object_repr": "testuser",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2026-05-24T12:42:26.803Z",
+    "user": 2,
+    "content_type": 4,
+    "object_id": "3",
+    "object_repr": "testuser",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2026-05-24T12:42:37.690Z",
+    "user": 2,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "qwerty",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2026-05-24T12:42:56.022Z",
+    "user": 2,
+    "content_type": 4,
+    "object_id": "4",
+    "object_repr": "testuser",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2026-05-24T12:43:22.694Z",
+    "user": 2,
+    "content_type": 4,
+    "object_id": "4",
+    "object_repr": "testuser",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\", \"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2026-05-24T17:36:20.445Z",
+    "user": 2,
+    "content_type": 4,
+    "object_id": "5",
+    "object_repr": "qaz",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2026-05-25T00:27:48.271Z",
+    "user": 2,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "Что такое Ibuprofen?",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2026-05-25T01:26:42.709Z",
+    "user": 2,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Weed",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0426\\u0435\\u043d\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2026-05-25T01:26:53.459Z",
+    "user": 2,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Paracetamol",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0426\\u0435\\u043d\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2026-05-25T01:28:35.777Z",
+    "user": 2,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Capsule",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2026-05-25T01:32:16.280Z",
+    "user": 2,
+    "content_type": 16,
+    "object_id": "2",
+    "object_repr": "q (10%)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2026-05-25T02:33:20.030Z",
+    "user": 2,
+    "content_type": 4,
+    "object_id": "7",
+    "object_repr": "AshtonHall",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2026-05-25T02:33:44.764Z",
+    "user": 2,
+    "content_type": 4,
+    "object_id": "7",
+    "object_repr": "AshtonHall",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\", \"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2026-05-25T02:34:26.556Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Ashton Hall",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2026-05-25T02:39:51.111Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Ashton Hall",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2026-05-25T02:51:53.078Z",
+    "user": 2,
+    "content_type": 19,
+    "object_id": "1",
+    "object_repr": "A",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2026-05-25T02:52:28.875Z",
+    "user": 2,
+    "content_type": 19,
+    "object_id": "2",
+    "object_repr": "B",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2026-05-25T03:05:09.824Z",
+    "user": 2,
+    "content_type": 14,
+    "object_id": "2",
+    "object_repr": "qqqq",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2026-05-25T03:05:14.091Z",
+    "user": 2,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "Test",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2026-05-25T03:05:45.303Z",
+    "user": 2,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "Lr done",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2026-05-25T03:06:40.873Z",
+    "user": 2,
+    "content_type": 14,
+    "object_id": "4",
+    "object_repr": "Wow!",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2026-05-25T03:35:35.074Z",
+    "user": 2,
+    "content_type": 24,
+    "object_id": "1",
+    "object_repr": "ab",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2026-05-25T03:36:21.924Z",
+    "user": 2,
+    "content_type": 24,
+    "object_id": "2",
+    "object_repr": "cd",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 3,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 3,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 3,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 3,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 2,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 2,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 2,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 2,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add О компании",
+    "content_type": 8,
+    "codename": "add_companyinfo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change О компании",
+    "content_type": 8,
+    "codename": "change_companyinfo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete О компании",
+    "content_type": 8,
+    "codename": "delete_companyinfo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view О компании",
+    "content_type": 8,
+    "codename": "view_companyinfo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add Контакт",
+    "content_type": 9,
+    "codename": "add_contact"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change Контакт",
+    "content_type": 9,
+    "codename": "change_contact"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete Контакт",
+    "content_type": 9,
+    "codename": "delete_contact"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view Контакт",
+    "content_type": 9,
+    "codename": "view_contact"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add Новость",
+    "content_type": 14,
+    "codename": "add_news"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change Новость",
+    "content_type": 14,
+    "codename": "change_news"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete Новость",
+    "content_type": 14,
+    "codename": "delete_news"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view Новость",
+    "content_type": 14,
+    "codename": "view_news"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add Промокод",
+    "content_type": 16,
+    "codename": "add_promocode"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change Промокод",
+    "content_type": 16,
+    "codename": "change_promocode"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete Промокод",
+    "content_type": 16,
+    "codename": "delete_promocode"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view Промокод",
+    "content_type": 16,
+    "codename": "view_promocode"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add Вакансия",
+    "content_type": 20,
+    "codename": "add_vacancy"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change Вакансия",
+    "content_type": 20,
+    "codename": "change_vacancy"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete Вакансия",
+    "content_type": 20,
+    "codename": "delete_vacancy"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view Вакансия",
+    "content_type": 20,
+    "codename": "view_vacancy"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add Запись",
+    "content_type": 11,
+    "codename": "add_faq"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change Запись",
+    "content_type": 11,
+    "codename": "change_faq"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete Запись",
+    "content_type": 11,
+    "codename": "delete_faq"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view Запись",
+    "content_type": 11,
+    "codename": "view_faq"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add sale",
+    "content_type": 18,
+    "codename": "add_sale"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change sale",
+    "content_type": 18,
+    "codename": "change_sale"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete sale",
+    "content_type": 18,
+    "codename": "delete_sale"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view sale",
+    "content_type": 18,
+    "codename": "view_sale"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add medication",
+    "content_type": 12,
+    "codename": "add_medication"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change medication",
+    "content_type": 12,
+    "codename": "change_medication"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete medication",
+    "content_type": 12,
+    "codename": "delete_medication"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view medication",
+    "content_type": 12,
+    "codename": "view_medication"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add medication category",
+    "content_type": 13,
+    "codename": "add_medicationcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change medication category",
+    "content_type": 13,
+    "codename": "change_medicationcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete medication category",
+    "content_type": 13,
+    "codename": "delete_medicationcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view medication category",
+    "content_type": 13,
+    "codename": "view_medicationcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add employee",
+    "content_type": 10,
+    "codename": "add_employee"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change employee",
+    "content_type": 10,
+    "codename": "change_employee"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete employee",
+    "content_type": 10,
+    "codename": "delete_employee"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view employee",
+    "content_type": 10,
+    "codename": "view_employee"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add pharmacy department",
+    "content_type": 15,
+    "codename": "add_pharmacydepartment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change pharmacy department",
+    "content_type": 15,
+    "codename": "change_pharmacydepartment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete pharmacy department",
+    "content_type": 15,
+    "codename": "delete_pharmacydepartment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view pharmacy department",
+    "content_type": 15,
+    "codename": "view_pharmacydepartment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 69,
+  "fields": {
+    "name": "Can add Отзыв",
+    "content_type": 17,
+    "codename": "add_review"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 70,
+  "fields": {
+    "name": "Can change Отзыв",
+    "content_type": 17,
+    "codename": "change_review"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 71,
+  "fields": {
+    "name": "Can delete Отзыв",
+    "content_type": 17,
+    "codename": "delete_review"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 72,
+  "fields": {
+    "name": "Can view Отзыв",
+    "content_type": 17,
+    "codename": "view_review"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 73,
+  "fields": {
+    "name": "Can add Поставщик",
+    "content_type": 19,
+    "codename": "add_supplier"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 74,
+  "fields": {
+    "name": "Can change Поставщик",
+    "content_type": 19,
+    "codename": "change_supplier"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 75,
+  "fields": {
+    "name": "Can delete Поставщик",
+    "content_type": 19,
+    "codename": "delete_supplier"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 76,
+  "fields": {
+    "name": "Can view Поставщик",
+    "content_type": 19,
+    "codename": "view_supplier"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 77,
+  "fields": {
+    "name": "Can add Действующее вещество",
+    "content_type": 7,
+    "codename": "add_activeingredient"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 78,
+  "fields": {
+    "name": "Can change Действующее вещество",
+    "content_type": 7,
+    "codename": "change_activeingredient"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 79,
+  "fields": {
+    "name": "Can delete Действующее вещество",
+    "content_type": 7,
+    "codename": "delete_activeingredient"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 80,
+  "fields": {
+    "name": "Can view Действующее вещество",
+    "content_type": 7,
+    "codename": "view_activeingredient"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 81,
+  "fields": {
+    "name": "Can add profile",
+    "content_type": 21,
+    "codename": "add_profile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 82,
+  "fields": {
+    "name": "Can change profile",
+    "content_type": 21,
+    "codename": "change_profile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 83,
+  "fields": {
+    "name": "Can delete profile",
+    "content_type": 21,
+    "codename": "delete_profile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 84,
+  "fields": {
+    "name": "Can view profile",
+    "content_type": 21,
+    "codename": "view_profile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 85,
+  "fields": {
+    "name": "Can add Товар в корзине",
+    "content_type": 22,
+    "codename": "add_cartitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 86,
+  "fields": {
+    "name": "Can change Товар в корзине",
+    "content_type": 22,
+    "codename": "change_cartitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 87,
+  "fields": {
+    "name": "Can delete Товар в корзине",
+    "content_type": 22,
+    "codename": "delete_cartitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 88,
+  "fields": {
+    "name": "Can view Товар в корзине",
+    "content_type": 22,
+    "codename": "view_cartitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 89,
+  "fields": {
+    "name": "Can add cart",
+    "content_type": 23,
+    "codename": "add_cart"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 90,
+  "fields": {
+    "name": "Can change cart",
+    "content_type": 23,
+    "codename": "change_cart"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 91,
+  "fields": {
+    "name": "Can delete cart",
+    "content_type": 23,
+    "codename": "delete_cart"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 92,
+  "fields": {
+    "name": "Can view cart",
+    "content_type": 23,
+    "codename": "view_cart"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 93,
+  "fields": {
+    "name": "Can add Точка самовывоза",
+    "content_type": 24,
+    "codename": "add_pickuppoint"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 94,
+  "fields": {
+    "name": "Can change Точка самовывоза",
+    "content_type": 24,
+    "codename": "change_pickuppoint"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 95,
+  "fields": {
+    "name": "Can delete Точка самовывоза",
+    "content_type": 24,
+    "codename": "delete_pickuppoint"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 96,
+  "fields": {
+    "name": "Can view Точка самовывоза",
+    "content_type": 24,
+    "codename": "view_pickuppoint"
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 1,
+  "fields": {
+    "name": "Employee",
+    "permissions": [
+      64,
+      56,
+      68,
+      40,
+      72,
+      49,
+      52,
+      76
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 2,
+  "fields": {
+    "name": "Customer",
+    "permissions": [
+      32,
+      48,
+      56,
+      36,
+      40,
+      69,
+      72
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$GKeKOePC28YYOsU1WSVmg3$CvvdnauP7I5K/EAILzZnfezYmtAd5TU1RuFPQ9qkwP8=",
+    "last_login": "2026-05-18T10:05:12.736Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "nikolajrabcevskij9@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-05-18T10:03:58.579Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$mCJriTQf7KhCGV1lEwPHS0$NcaTp7Cvoj3WCsSfz0YN0gC4WrgIPntjLqcmgfWCiOM=",
+    "last_login": "2026-05-25T03:34:38.184Z",
+    "is_superuser": true,
+    "username": "qwerty",
+    "first_name": "",
+    "last_name": "",
+    "email": "aaaaaaaaaaa@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-05-19T23:46:39Z",
+    "groups": [
+      1
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$ioBSJPd7hcHcIRa4RtSYUg$P+f9rC0mR/xM8gIRiNON3oCU/n1cN7R7JF8j37NSd+M=",
+    "last_login": "2026-05-25T00:18:42.558Z",
+    "is_superuser": false,
+    "username": "testuser",
+    "first_name": "Jane",
+    "last_name": "Doe",
+    "email": "janedoe@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-24T12:42:55Z",
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$x1VukqOeqqB7BlZtHEOWju$0XiWcbkNMUNDzO3GBYBbv/YbzgdA75lx6rkh1iVE3ng=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "qaz",
+    "first_name": "Egor",
+    "last_name": "Petrusha",
+    "email": "ahahahahah@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-24T17:26:04Z",
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$XDT0QKU3coDi7yJ3ZU1da9$T9wUi291339At8gpd2F7ME1eqOKRvJRMKrgnlD0OpOw=",
+    "last_login": "2026-05-25T03:36:39.535Z",
+    "is_superuser": false,
+    "username": "Mattfire",
+    "first_name": "Matvei",
+    "last_name": "Mikhnovetz",
+    "email": "mattfire@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-24T17:38:08.585Z",
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 7,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$hUEkkb5I0irnvL7KmQ4oZn$xmJufEITE448ufK3mcZacps/pTdK7F87z9GZJ8vycok=",
+    "last_login": "2026-05-25T02:53:00.973Z",
+    "is_superuser": false,
+    "username": "AshtonHall",
+    "first_name": "Ashton",
+    "last_name": "Hall",
+    "email": "ibragim@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-25T02:33:19Z",
+    "groups": [
+      1
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "xckklud8s43yaby48yt8gt290ukhnk82",
+  "fields": {
+    "session_data": ".eJxVzL0OgkAQBOB3udpcdnPnopb2PsNl_xTUQMJBRXx3IaHQdr6ZWULheWrLXH0snYVLoHD4zYT15f0G9uT-MUQd-mnsJG6VuGuNt8H8fd27fwct13Zdg_AR0FJGSdKQYqNADkk4g1Gis2oyA8PV80oNorIgnO4u5C7h8wXcojgq:1wRM7L:63kWeyK2Fi4vPo0w_efdvJ_vhFfMzq8GlIyKZ_eWO2Y",
+    "expire_date": "2026-06-08T03:36:39.539Z"
+  }
+},
+{
+  "model": "pharmacy.activeingredient",
+  "pk": 1,
+  "fields": {
+    "name": "weed",
+    "description": "pass the boof"
+  }
+},
+{
+  "model": "pharmacy.activeingredient",
+  "pk": 2,
+  "fields": {
+    "name": "Acetaminophen",
+    "description": ""
+  }
+},
+{
+  "model": "pharmacy.pharmacydepartment",
+  "pk": 1,
+  "fields": {
+    "name": "Drugs",
+    "description": "morphine, fenyl, etc."
+  }
+},
+{
+  "model": "pharmacy.pharmacydepartment",
+  "pk": 2,
+  "fields": {
+    "name": "For all people",
+    "description": "For all people(no drugs, potent medications, etc. )"
+  }
+},
+{
+  "model": "pharmacy.medicationcategory",
+  "pk": 1,
+  "fields": {
+    "name": "Drugs",
+    "description": "kaef"
+  }
+},
+{
+  "model": "pharmacy.medicationcategory",
+  "pk": 2,
+  "fields": {
+    "name": "analgesic",
+    "description": ""
+  }
+},
+{
+  "model": "pharmacy.supplier",
+  "pk": 1,
+  "fields": {
+    "name": "A",
+    "contact_person": "a",
+    "phone": "+375 (29) 228-33-70",
+    "email": "q@gmail.com",
+    "inn": "11",
+    "address": "sdvadsv 12",
+    "medications": [
+      3
+    ]
+  }
+},
+{
+  "model": "pharmacy.supplier",
+  "pk": 2,
+  "fields": {
+    "name": "B",
+    "contact_person": "b",
+    "phone": "+375 (29) 228-33-70",
+    "email": "w@gmail.com",
+    "inn": "12",
+    "address": "ebsdbj 12",
+    "medications": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "pharmacy.medication",
+  "pk": 1,
+  "fields": {
+    "ndc": "1",
+    "name": "Weed",
+    "image": "",
+    "department": 1,
+    "category": 1,
+    "last_api_update": "2026-05-25T01:26:42.707Z",
+    "price": "15.00",
+    "requires_prescription": true,
+    "manufacturer": "snoop dogg",
+    "active_ingredients": [
+      1
+    ]
+  }
+},
+{
+  "model": "pharmacy.medication",
+  "pk": 2,
+  "fields": {
+    "ndc": "2",
+    "name": "Paracetamol",
+    "image": "",
+    "department": 2,
+    "category": 2,
+    "last_api_update": "2026-05-25T01:26:53.457Z",
+    "price": "1.00",
+    "requires_prescription": false,
+    "manufacturer": "BORISMED",
+    "active_ingredients": [
+      2
+    ]
+  }
+},
+{
+  "model": "pharmacy.medication",
+  "pk": 3,
+  "fields": {
+    "ndc": "3",
+    "name": "Capsule",
+    "image": "medications/photo_5290015862075563007_x.jpg",
+    "department": 2,
+    "category": 2,
+    "last_api_update": "2026-05-25T01:28:35.775Z",
+    "price": "228.00",
+    "requires_prescription": false,
+    "manufacturer": "snoop dogg",
+    "active_ingredients": [
+      2
+    ]
+  }
+},
+{
+  "model": "pharmacy.employee",
+  "pk": 1,
+  "fields": {
+    "user": 7,
+    "position": "idk",
+    "department": 1,
+    "phone": "+375 (29) 228-33-70",
+    "hire_date": "2026-05-25",
+    "salary": "52.00",
+    "photo": "employees/images.jpeg"
+  }
+},
+{
+  "model": "pharmacy.sale",
+  "pk": 1,
+  "fields": {
+    "medication": 1,
+    "employee": null,
+    "quantity": 1,
+    "price_per_unit": "15.00",
+    "total_price": "15.00",
+    "sale_date": "2026-05-25T01:31:15.230Z",
+    "buyer_name": "Mattfire",
+    "buyer_phone": "+375 (29) 228 33 70"
+  }
+},
+{
+  "model": "pharmacy.sale",
+  "pk": 2,
+  "fields": {
+    "medication": 3,
+    "employee": null,
+    "quantity": 1,
+    "price_per_unit": "228.00",
+    "total_price": "228.00",
+    "sale_date": "2026-05-25T01:31:15.231Z",
+    "buyer_name": "Mattfire",
+    "buyer_phone": "+375 (29) 228 33 70"
+  }
+},
+{
+  "model": "pharmacy.sale",
+  "pk": 3,
+  "fields": {
+    "medication": 3,
+    "employee": null,
+    "quantity": 1,
+    "price_per_unit": "228.00",
+    "total_price": "228.00",
+    "sale_date": "2026-05-25T03:37:32.405Z",
+    "buyer_name": "Mattfire",
+    "buyer_phone": "+375 (29) 228-33-70"
+  }
+},
+{
+  "model": "pharmacy.promocode",
+  "pk": 1,
+  "fields": {
+    "code": "test",
+    "discount": 15,
+    "max_uses": 2,
+    "used_count": 0,
+    "start_date": "2026-05-22T08:05:04Z",
+    "end_date": "2026-05-25T08:05:31Z",
+    "is_active": true,
+    "created_at": "2026-05-22T08:05:33.765Z",
+    "updated_at": "2026-05-22T08:05:33.765Z",
+    "applied_promo": null,
+    "discount_amount": "0.00",
+    "final_price": "0.00"
+  }
+},
+{
+  "model": "pharmacy.promocode",
+  "pk": 2,
+  "fields": {
+    "code": "q",
+    "discount": 10,
+    "max_uses": 1,
+    "used_count": 0,
+    "start_date": "2026-05-25T01:31:47Z",
+    "end_date": "2026-05-26T01:32:15Z",
+    "is_active": true,
+    "created_at": "2026-05-25T01:32:16.279Z",
+    "updated_at": "2026-05-25T01:32:16.279Z",
+    "applied_promo": null,
+    "discount_amount": "0.00",
+    "final_price": "0.00"
+  }
+},
+{
+  "model": "pharmacy.news",
+  "pk": 3,
+  "fields": {
+    "title": "Lr done",
+    "summary": "uraaaaa",
+    "image": "news/Диаграмма_без_названия_2.png",
+    "full_text": "поставьте пожалуйста 7+",
+    "publish_date": "2026-05-25T03:05:45.302Z",
+    "is_published": true
+  }
+},
+{
+  "model": "pharmacy.news",
+  "pk": 4,
+  "fields": {
+    "title": "Wow!",
+    "summary": "New employeeee",
+    "image": "news/images.jpeg",
+    "full_text": "Finally, we have best worker on the Earth",
+    "publish_date": "2026-05-25T03:06:40.873Z",
+    "is_published": true
+  }
+},
+{
+  "model": "pharmacy.review",
+  "pk": 1,
+  "fields": {
+    "user": 4,
+    "text": "nice job guys",
+    "rating": 5,
+    "created_at": "2026-05-24T16:08:26.737Z",
+    "updated_at": "2026-05-24T16:08:26.737Z",
+    "is_published": true
+  }
+},
+{
+  "model": "pharmacy.review",
+  "pk": 2,
+  "fields": {
+    "user": 6,
+    "text": "ваще норм прям",
+    "rating": 5,
+    "created_at": "2026-05-24T23:26:06.018Z",
+    "updated_at": "2026-05-24T23:26:06.018Z",
+    "is_published": true
+  }
+},
+{
+  "model": "pharmacy.cartitem",
+  "pk": 1,
+  "fields": {
+    "medication": 1,
+    "quantity": 1,
+    "added_at": "2026-05-25T00:56:44.967Z",
+    "cart": null
+  }
+},
+{
+  "model": "pharmacy.cart",
+  "pk": 1,
+  "fields": {
+    "user": 6,
+    "applied_promo": null,
+    "discount_amount": "0.00",
+    "created_at": "2026-05-25T01:12:50.876Z",
+    "updated_at": "2026-05-25T03:37:32.406Z"
+  }
+},
+{
+  "model": "pharmacy.pickuppoint",
+  "pk": 1,
+  "fields": {
+    "name": "ab",
+    "address": "qwedfgkjh kjgckhg",
+    "latitude": 53.9045,
+    "longitude": 27.5615,
+    "is_active": true
+  }
+},
+{
+  "model": "pharmacy.pickuppoint",
+  "pk": 2,
+  "fields": {
+    "name": "cd",
+    "address": "qqwwerty",
+    "latitude": 53.895,
+    "longitude": 27.553,
+    "is_active": true
+  }
+}
+]
