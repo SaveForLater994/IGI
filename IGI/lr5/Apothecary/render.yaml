@@ -3,11 +3,10 @@ services:
     name: pharmacy-app-dnr7
     runtime: python
     plan: free
-    buildCommand: |
-      pip install -r requirements.txt &&
-      python manage.py collectstatic --noinput &&
-      python manage.py migrate
-    startCommand: gunicorn Apothecary.wsgi:application --bind 0.0.0.0:8000
+    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --noinput
+    startCommand: |
+      python manage.py migrate &&
+      gunicorn Apothecary.wsgi:application --bind 0.0.0.0:8000
     envVars:
       - key: SECRET_KEY
         generateValue: true
