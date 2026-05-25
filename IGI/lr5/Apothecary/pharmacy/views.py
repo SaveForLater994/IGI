@@ -134,7 +134,7 @@ def add_review(request):
     return render(request, 'review_form.html')
 
 def promocodes(request):
-    nw = timezone.now()
+    nw = datetime.now()
     active_promocodes = PromoCode.objects.filter(
         is_active=True,
         start_date__lte=nw,
@@ -168,7 +168,7 @@ class UserRegistrationForm(UserCreationForm):
             raise ValidationError('Пожалуйста, укажите дату рождения')
         
         # Вычисляем возраст
-        today = timezone.now().date()
+        today = datetime.now().date()
         age = today.year - birth_date.year
         if (today.month, today.day) < (birth_date.month, birth_date.day):
             age -= 1
