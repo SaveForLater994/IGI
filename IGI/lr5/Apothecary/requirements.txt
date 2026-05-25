@@ -6,3 +6,4 @@ python-dotenv
 Pillow
 matplotlib
 requests
+dj_database_url
